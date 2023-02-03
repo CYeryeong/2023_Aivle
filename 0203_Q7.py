@@ -2,6 +2,8 @@
 
 def solution(arr):
     answer = []
+    #while 문으로 앞과 뒤가 같으면 뒤를 삭제, 
+    # 앞과 뒤가 다르면 뒤로 움직여 뒤와 뒤뒤비교 하면되지않을까
     for i in range(len(arr)-1):
         if arr[i] == arr[i+1]:
             arr.pop(i+1)
